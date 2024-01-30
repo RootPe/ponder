@@ -40,7 +40,7 @@ export class PostgresIndexingStore implements IndexingStore {
   private databaseSchemaName: string;
 
   constructor({ common, pool }: { common: Common; pool: Pool }) {
-    this.databaseSchemaName = `ponder_${new Date().getTime()}`;
+    this.databaseSchemaName = `ponder`;
     this.common = common;
 
     this.common.logger.debug({
